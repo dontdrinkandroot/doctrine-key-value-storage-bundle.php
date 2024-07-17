@@ -1,0 +1,8 @@
+/composer.lock
+/vendor/
+/.phpunit.result.cache
+/symfony.lock
+
+/.idea/**
+!/.idea/codeStyles/
+!/.idea/codeStyles/**

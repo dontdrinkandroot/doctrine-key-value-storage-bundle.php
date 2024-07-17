@@ -1,0 +1,15 @@
+name: "Continuous Integration"
+
+on: push
+
+jobs:
+    phpunit-and-psalm:
+        uses: dontdrinkandroot/github-actions/.github/workflows/php-symfony-bundle.yml@main
+        secrets: inherit
+
+    sonarcloud:
+        uses: dontdrinkandroot/github-actions/.github/workflows/php-sonarcloud.yml@main
+        needs: phpunit-and-psalm
+        with:
+            project-key: 'dontdrinkandroot_doctrine-key-value-storage-bundle.php'
+        secrets: inherit

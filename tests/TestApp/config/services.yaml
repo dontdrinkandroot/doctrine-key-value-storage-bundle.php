@@ -1,0 +1,6 @@
+services:
+
+    #    # Make public
+    Dontdrinkandroot\DoctrineKeyValueStorageBundle\Service\KeyValueStorageInterface:
+        alias: Dontdrinkandroot\DoctrineKeyValueStorageBundle\Service\DoctrineKeyValueStorage
+        public: true
