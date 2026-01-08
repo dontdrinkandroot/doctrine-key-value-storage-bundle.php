@@ -16,3 +16,4 @@ jobs:
         needs: phpunit
         with:
             project-key: 'dontdrinkandroot_doctrine-key-value-storage-bundle.php'
+        secrets: inherit
