@@ -6,6 +6,10 @@ jobs:
     phpunit-and-psalm:
         uses: dontdrinkandroot/github-actions/.github/workflows/php-symfony-bundle.yml@main
         secrets: inherit
+    #
+    #    phpstan:
+    #        uses: dontdrinkandroot/github-actions/.github/workflows/php-symfony-bundle-phpstan.yml@main
+    #        secrets: inherit
 
     sonarcloud:
         uses: dontdrinkandroot/github-actions/.github/workflows/php-sonarcloud.yml@main
